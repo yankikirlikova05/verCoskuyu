@@ -11,5 +11,7 @@ public final class Constants {
 	public static final int JOYSTICK_NUMBER = 0;
 	public static final int INTAKE = 0;
 	public static final boolean INTAKE_isInverted = false;
+    public static final double DriveStraightSpeed = 0.6;
+	public static boolean kGyroReversed = false;
 }
 

@@ -31,11 +31,11 @@ public class VerCoskuyu extends CommandBase {
   public void execute() {
       
     if(Timer.getFPGATimestamp() - initTime < 0.3) {
-      drivetrain.verCoskuyu(0.6);
+      drivetrain.verCoskuyu(0.0,0.60,0.0);
       // System.out.print("intakereverse");
     }
     else{
-      drivetrain.verCoskuyu(0);
+      drivetrain.verCoskuyu(0,0,0);
     }
   }
 
@@ -46,7 +46,7 @@ public class VerCoskuyu extends CommandBase {
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    drivetrain.verCoskuyu(0);
+    drivetrain.verCoskuyu(0.0,0.0,0.0);
   }
 
   // Returns true when the command should end.
